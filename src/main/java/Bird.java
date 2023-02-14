@@ -5,6 +5,7 @@
  * As of right now, Java comes with 8 primitive datatypes. 
  * What if we wanted to create our own datatypes?
  * 
+ *
  * Solution:
  * Classes allow us to define a custom datatype.
  * When we create a variable with a class as its datatype, that variable is considered an object.
@@ -45,7 +46,10 @@ public class Bird {
      *         greater than or equal to 3.
      */
     public String sound(){
-        return "";
+        if(ageMonths < 3) {
+            return "Tweet";
+        } else {
+            return "Chirp";
+        }
     }
-
 }
